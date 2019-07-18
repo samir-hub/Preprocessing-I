@@ -1,1 +1,306 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* General Styles */
+body {
+  width: 95%;
+  margin: 0 auto;
+}
+/* Header Styles */
+header {
+  font-family: 'Titillium Web', sans-serif;
+}
+header .header-top {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-top nav {
+  width: 30%;
+  text-align: right;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  header .header-top nav {
+    width: 50%;
+  }
+}
+header .header-top nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+  padding-left: 2%;
+}
+@media (max-width: 500px) {
+  header .header-top nav a {
+    font-size: 0.75rem;
+  }
+}
+header .header-bottom {
+  padding: 5%;
+  background: lightgray;
+  height: 80%;
+}
+@media (max-width: 500px) {
+  header .header-bottom div {
+    display: flex;
+    justify-content: center;
+  }
+}
+header .header-bottom div img {
+  width: 30%;
+}
+header .header-bottom h1 {
+  font-size: 3.5rem;
+  padding: 1.5% 0;
+}
+@media (max-width: 500px) {
+  header .header-bottom h1 {
+    font-size: 2rem;
+    padding: 1.5% 0;
+  }
+}
+header .header-bottom h2 {
+  font-size: 1.3rem;
+  padding: 1.5% 0;
+}
+header .header-bottom p {
+  border-top: 1px solid black;
+  padding: 1.5% 0;
+}
+header .header-bottom button {
+  background: gray;
+  color: white;
+  border: 1px solid gray;
+  height: 60px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  header .header-bottom button {
+    display: flex;
+    justify-items: center;
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    font-size: 0.65rem;
+  }
+}
+/* main-top Styles */
+.main-top {
+  font-family: 'Titillium Web', sans-serif;
+  padding: 1.5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main-top .listen {
+  width: 48%;
+}
+.main-top .listen h1 {
+  font-size: 2rem;
+  font-style: bold;
+  margin-bottom: 1.5%;
+}
+.main-top .listen p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+@media (max-width: 500px) {
+  .main-top .listen p {
+    font-size: 0.8rem;
+  }
+}
+.main-top .stuff {
+  width: 48%;
+}
+.main-top .stuff h1 {
+  font-size: 2rem;
+  font-style: bold;
+  margin-bottom: 1.5%;
+}
+.main-top .stuff p {
+  border: 1px solid gray;
+  font-size: 1.2rem;
+  line-height: 40px;
+}
+@media (max-width: 500px) {
+  .main-top .stuff p {
+    font-size: 0.8rem;
+  }
+}
+/* main-bottom Styles */
+.main-bottom {
+  font-family: 'Titillium Web', sans-serif;
+}
+.main-bottom h1 {
+  font-size: 2rem;
+  font-style: bold;
+}
+.main-bottom table {
+  margin: 2% 0;
+  border: 1.5px solid gray;
+}
+.main-bottom table tr:nth-child(even) {
+  background-color: lightgray;
+}
+.main-bottom table tr {
+  border: 1.5px solid gray;
+}
+.main-bottom table tr th {
+  text-align: left;
+  font-style: bold;
+  padding: 10px;
+}
+.main-bottom table tr td {
+  padding: 10px;
+}
+/* Footer Styles */
+footer {
+  font-family: 'Titillium Web', sans-serif;
+  background: gray;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  footer {
+    font-size: 0.8rem;
+  }
+}
